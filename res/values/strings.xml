@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">OA IM</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">IM</string>
+    
+    
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="returns_root">返回根目录..</string>
+    <string name="returns_layer">返回上一层..</string>
+    <string name="newcreate">新建</string>
+    
+    
+    <string name="dialog_default_title">消息：</string>
+    <string name="dialog_ok"> 确认 </string>
+    <string name="dialog_cancel"> 取消 </string>
+    
+    <string name="default_progressbar">跳动进度条</string>
+
+</resources>

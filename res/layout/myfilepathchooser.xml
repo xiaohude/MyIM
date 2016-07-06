@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="480dp"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/mPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@drawable/blue"
+            android:textSize="14dp" />
+        
+        <Button 
+            android:id="@+id/buttonClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/close_btn"
+            android:onClick="OnClickClose"
+            />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout1"
+            android:layout_below="@+id/mPath" >
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white"
+            android:gravity="center"
+            android:orientation="vertical" 
+            >
+
+            <View
+                android:id="@+id/View1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="#C1C1C1" />
+            
+            <LinearLayout
+                android:id="@+id/layout2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" 
+	            android:gravity="center"
+	            >
+	
+                <Button
+	                android:id="@+id/buttonNew"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:layout_marginTop="2dp"
+	                android:layout_marginBottom="2dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_gravity="center_vertical"
+	                android:background="@drawable/btn_blueback"
+	                android:text="@string/newcreate"
+	                android:textColor="@color/white" />
+                
+	            <Button
+	                android:id="@+id/buttonCancle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:layout_marginTop="2dp"
+	                android:layout_marginBottom="2dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_gravity="center_vertical"
+	                android:background="@drawable/btn_blueback"
+	                android:text="@string/cancel"
+	                android:textColor="@color/white" />
+	            <Button
+	                android:id="@+id/buttonOK"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:layout_marginTop="2dp"
+	                android:layout_marginBottom="2dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_gravity="center_vertical"
+	                android:background="@drawable/btn_blueback"
+	                android:text="@string/confirm"
+	                android:textColor="@color/white" />
+	
+	        </LinearLayout>
+        
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
